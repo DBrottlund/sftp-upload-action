@@ -16775,7 +16775,7 @@ class SftpSync {
         this.config = config;
         this.options = Object.assign({
             dryRun: false,
-            exclude: [],
+            exclude: ['.git', '.github'],
             excludeMode: 'remove'
         }, options);
         this.client = new ssh2_1.Client;
